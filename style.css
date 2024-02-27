@@ -1,0 +1,15 @@
+form {
+    justify-content: center;
+    margin-left: 600px;
+    scale: 30px;
+}
+input
+{
+  height: 100px;
+  width: 100px;
+  font-size: 30px;
+}
+
+#resultat {
+    width: 613px;
+}

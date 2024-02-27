@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+    <title>Calculatrice</title>
+</head>
+<body>
+    <form name="calculs">
+        <table>
+            <tr>
+                <td>
+                    <input type="text" value="" name="resultat" id="resultat"/>
+                    <input type="button" value=" C "  onClick="effacer()"/>	
+                </td>
+            </tr>
+            <tr>
+                <td colspan="10">
+                    <input type="button" value=" 1 " onClick="saisie(1)"/>
+                    <input type="button" value=" 2 " onClick="saisie(2)"/>
+                    <input type="button" value=" 3 " onClick="saisie(3)"/>
+                
+                    <input type="button" value=" * " onClick="signe('*')"/>
+                    <input type="button" value=" / " onClick="signe('/')"/>
+                    <input type="button" value=" + " onClick="signe('+')"/>
+                    <input type="button" value=" - " onClick="signe('-')"/>
+                    
+                </td>
+            </tr>
+                <tr>
+                <td colspan="10">
+                    <input type="button" value=" 4 " onClick="saisie(4)"/>
+                    <input type="button" value=" 5 " onClick="saisie(5)"/>
+                    <input type="button" value=" 6 " onClick="saisie(6)"/>
+                    <input type="button" value=" % " onClick="signe('%')"/>
+                    <input type="button" value=" √x " onClick="scientific(1)"/>
+                    <input type="button" value=" Pi " onClick="scientific(3)"/>
+                    <input type="button" value=" Abs " onClick="scientific(2)"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="10">
+                    <input type="button" value=" 7 " onClick="saisie(7)"/>
+                    <input type="button" value=" 8 " onClick="saisie(8)"/>
+                    <input type="button" value=" 9 " onClick="saisie(9)"/>
+                    <input type="button" value=" x^y " onClick="signe('Pui')"/>
+                    <input type="button" value=" Sin " onClick="scientific(4)"/>
+                    <input type="button" value=" Cos " onClick="scientific(5)"/>
+                    <input type="button" value=" Tan " onClick="scientific(6)"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="10">
+                    <input type="button" value=" 0 " onClick="saisie(0)"/>
+                    <input type="button" value=" . " onClick="saisie('.')"/>
+                    <input type="button" value="  =  " onClick="calcul()"/>
+                    <input type="button" value="  Log  " onClick="scientific(7)"/>
+                    <input type="button" value="  Exp  " onClick="scientific(8)"/>
+                    <input type="button" value="  Ln2  " onClick="scientific(9)"/>
+                    <input type="button" value=" Ln10 " onClick="scientific(10)"/>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="10">
+                    <input type="button" value=" Asin " onClick="scientific(11)"/>
+                    <input type="button" value=" Acos " onClick="scientific(12)"/>
+                    <input type="button" value=" Atan " onClick="scientific(13)"/>
+                    <input type="button" value=" Ln10 " onClick="scientific(10)"/>
+                    <input type="button" value=" MS " onClick="memoire(1)"/>
+                    <input type="button" value=" MR " onClick="memoire(2)"/>
+                    <input type="button" value=" + - " onClick="inverse()"/>		
+                </td>
+            </tr>
+        </table>
+        </form>
+    <script src="main.js"></script>
+</body>
+</html>
